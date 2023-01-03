@@ -28,7 +28,7 @@ def HataAyikla(r):
         return
 
 def SonuclariAl():
-    r = requests.get('http://sonuc.osym.gov.tr')
+    r = requests.get('http://sonuc.osym.gov.tr', verify=False) # Umarım yerel ağda kötü biri yoktur.
     return r
 
 while not degisti:
